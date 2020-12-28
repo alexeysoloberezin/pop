@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/popupstyle.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+	<title>Popup</title>
+</head>
+<body>
+	<div class="worldpopup-wrapper">
+		<p class="kudaclick">click</p>
+		<div class="worldpopup">
+			<div class="worldpopup__window-1 worldpopup__window">
+				<div class="worldpopup-close"></div>
+				<p class="worldpopup__window-1__title">Получите мгновенную цену на перевозку или позвоните </p>
+				<a class="worldpopup__window-1__tel" href="tel:+78006002914">8-800-600-29-14</a>
+				<input class="worldpopup__window-input" type="text" placeholder="Откуда везем">
+				<input class="worldpopup__window-input" type="text" placeholder="Куда везем">
+				<button class="worldpopup__window-btn">Выбрать марку / модель ТС</button>
+				<div class="worldpopup__window-indecators">
+					<p class="worldpopup__window-indecator worldpopup__window-indecator-active">1</p>
+					<p class="worldpopup__window-indecator">2</p>
+					<p class="worldpopup__window-indecator">3</p>
+				</div>
+			</div>	
+
+			<div class="worldpopup__window-2 worldpopup__window">
+				<div class="worldpopup-close"></div>
+				<p class="worldpopup__window__titleselect">Выберите тип на примере модельного ряда ауди</p>
+				<select class="worldpopup__window-select">
+					<option class="worldpopup__window-option" value="Категория-А (А1, А2, А3, А4, ТТ)">Категория-А (А1, А2, А3, А4, ТТ)</option>			
+					<option class="worldpopup__window-option" value="Категория-В (А5, А6)">Категория-В (А5, А6)</option>
+					<option class="worldpopup__window-option" value="Категория-С (А7, А8, S)">Категория-С (А7, А8, S)</option>
+					<option class="worldpopup__window-option" value="Категория-D (Q3)">Категория-D (Q3)</option>
+					<option class="worldpopup__window-option" value="Категория-E (Q5)">Категория-E (Q5)</option>
+					<option class="worldpopup__window-option" value="Категория-F (Q7)">Категория-F (Q7)</option>
+					<option class="worldpopup__window-option" value="Категория-J (Q8)">Категория-J (Q8)</option>
+					<option class="worldpopup__window-option" value="ЛОТ (полный автовоз)">ЛОТ (полный автовоз)</option>
+				</select>
+				<p class="worldpopup__window__txt">Отправьте копию рассчета цены и КП на мой email</p>
+				<input class="worldpopup__window-input" type="email" placeholder="Email">
+				<button class="worldpopup__window-btn">Выбрать дату погрузки</button>
+				<div class="worldpopup__window-indecators">
+					<p class="worldpopup__window-indecator ">1</p>
+					<p class="worldpopup__window-indecator worldpopup__window-indecator-active">2</p>
+					<p class="worldpopup__window-indecator">3</p>
+				</div>
+			</div>
+
+			<div class="worldpopup__window-3 worldpopup__window">
+				<div class="worldpopup-close"></div>
+				<p class="worldpopup__window__titleselect">Когда бы вы хотели отправить авто?</p>
+				<select class="worldpopup__window-select">
+					<option class="worldpopup__window-option" value="в течении суток">в течении суток</option>			
+					<option class="worldpopup__window-option" value="в ближайшее время">в ближайшее время</option>
+					<option class="worldpopup__window-option" value="в течении недели">в течении недели</option>
+					<option class="worldpopup__window-option" value="в течении двух недель">в течении двух недель</option>
+					<option class="worldpopup__window-option" value="мне не срочно, главное подешевле">мне не срочно, главное подешевле</option>
+				</select>
+				<p class="worldpopup__window__txt">Можете ввести дополнительный контакт - номер телефона</p>
+				<input  class="worldpopup__window-input worldpopup__window-input-phone" type="text" placeholder="Телефон">
+				<button class="worldpopup__window-btn worldpopup__window-btn-kp">Также отправить КП на WhatsApp</button>
+				<button class="worldpopup__window-btn">Расчет цены</button>
+				<div class="worldpopup__window-indecators">
+					<p class="worldpopup__window-indecator ">1</p>
+					<p class="worldpopup__window-indecator ">2</p>
+					<p class="worldpopup__window-indecator worldpopup__window-indecator-active">3</p>
+				</div>
+			</div>
+
+			<div class="worldpopup__window-end worldpopup__window">
+				<div class="worldpopup-close"></div>
+				<p class="worldpopup__window-end__title">Стоимость перевозки отправлена на Email / WhatsApp <span> (в зависимостит от выбора клиента)</span></p>
+				<div class="worldpopup__window-end__wrapper">
+					<div class="worldpopup__window-end__inner">
+						<p>Со скидкой</p>
+						<input class="worldpopup__window-end-input" type="text" readonly="readonly" value="0">
+						<p>Забронируй цену со скидку 5% оплатив в течении 24-х часов</p>
+					</div>
+					<div class="worldpopup__window-end__inner">
+						<p>Без</p>
+						<input class="worldpopup__window-end-input" type="text" readonly="readonly" value="0">
+						<p>Оплата по договору перед началом перевозки</p>
+					</div>
+				</div>
+				<p class="worldpopup__window-end__text">Нашли дешевле?<br>Позвоните <a href="tel:+780086002914">8-8008-600-29-14</a> 
+					<br>и мы постараемся найти для вас наилучшее предложение!
+				</p>			
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"> </script>
+	<script type="text/javascript" src="js/popupscript.js"></script>
+</body>
+</html>
